@@ -1,8 +1,8 @@
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
-zstyle ':completion:*' max-errors 1
-zstyle :compinstall filename '/home/tim/.zshrc'
+zstyle ':completion:*' max-errors 0
+zstyle :compinstall filename '/home/$USER/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -12,5 +12,9 @@ HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 bindkey -v
+bindkey -e
+bindkey '\e[3~' delete-char
+bindkey '\e[1~' beginning-of-line
+bindkey '\e[4~' end-of-line
 
 ZSH_THEME="agnoster"
