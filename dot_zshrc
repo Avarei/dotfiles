@@ -11,7 +11,14 @@ compinit
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
+# bindkey
 bindkey -v
+bindkey -e
+bindkey "\e[3~" delete-char
+# Home- und End-Keys.
+bindkey '\e[1~' beginning-of-line
+bindkey '\e[4~' end-of-line
+
 
 ZSH_THEME="agnoster"
 
