@@ -18,6 +18,8 @@ zplug "modules/history", from:prezto
 zplug "modules/spectrum", from:prezto
 #zplug "modules/prompt", from:prezto
 zplug "modules/completion", from:prezto
+zstyle ':completion:*' max-errors 0
+zstyle ':completion:*:approximate:*' max-errors ''
 
 zplug "modules/archive", from:prezto
 zplug "modules/git", from:prezto
@@ -35,3 +37,4 @@ if ! zplug check --verbose; then
 fi
 
 zplug load
+
