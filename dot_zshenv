@@ -5,4 +5,3 @@ export PS1='%F{254}%n%F{245}:%F{153}%(5~|%-1~/⋯/%3~|%4~)%F{245} '
 # Theme
 export ZSH_THEME="agnoster"
 
-export PATH=/usr/local/go/bin:$HOME/.local/bin:$PATH

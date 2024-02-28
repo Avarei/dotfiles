@@ -1,0 +1,29 @@
+# Editors
+export EDITOR='nvim'
+export VISUAL='nvim'
+export PAGER='less'
+
+# Language
+if [[ -z "$LANG" ]]; then
+  export LANG='en_US.UTF-8'
+fi
+
+# Paths
+# Ensure path arrays do not contain duplicates.
+typeset -gU cdpath fpath mailpath path
+path=(
+  $HOME/.local/bin
+  /usr/local/{,s}bin
+  $path
+  /usr/local/go/bin
+)
+cdpath=(
+  $HOME/go
+  $HOME/code
+  $HOME/k8c
+)
+fpath=(
+  $HOME/.zcompletions
+  $fpath
+)
+
