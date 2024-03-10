@@ -17,11 +17,8 @@ path=(
   $path
   /usr/local/go/bin
 )
-cdpath=(
-  $HOME/go
-  $HOME/code
-  $HOME/k8c
-)
+# cdpath=(
+# )
 fpath=(
   $HOME/.zcompletions
   $fpath
