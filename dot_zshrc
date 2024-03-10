@@ -38,3 +38,4 @@ fi
 
 zplug load
 
+unsetopt BEEP
