@@ -26,6 +26,32 @@ require("lazy").setup({
     end
   },
   {
+    "nvim-treesitter/nvim-treesitter-context",
+    config = function()
+      require("treesitter-context").setup({
+        enable = true,
+        throttle = true,
+        max_lines = 0,
+        patterns = {
+          default = {
+            'class',
+            'function',
+            'method',
+            -- 'for', -- These won't appear in the context
+            -- 'while',
+            -- 'if',
+            -- 'switch',
+            -- 'case', 
+          },
+          yaml = {
+            "block_mapping_pair",
+            "block_sequience_item",
+          },
+        },
+      })
+    end
+  },
+  {
     "mfussenegger/nvim-dap",
   },
   {
