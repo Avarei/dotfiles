@@ -3,3 +3,6 @@
 [user]
 	name = Tim
 	email = 32556895+Avarei@users.noreply.github.com
+	signingkey = BA79516B1CF85802
+[commit]
+	gpgsign = true
