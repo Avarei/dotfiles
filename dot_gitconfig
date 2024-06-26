@@ -6,3 +6,5 @@
 	signingkey = BA79516B1CF85802
 [commit]
 	gpgsign = true
+[format]
+	signoff = true
