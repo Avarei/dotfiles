@@ -17,7 +17,7 @@ fi
 typeset -gU cdpath fpath mailpath path
 path=(
   $HOME/.local/bin
-  $HOME/go/bin
+  $HOME/.local/go/bin
   $HOME/.npm-global/bin
   /opt/homebrew/bin
   /opt/homebrew/sbin
