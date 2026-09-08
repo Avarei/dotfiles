@@ -1,7 +1,7 @@
 {
   config,
   lib,
-  pkgs,
+  pkgs-unstable,
   ...
 }: let
   cfg = config.dotfiles.selfhosted.ollama;
@@ -15,7 +15,7 @@ in {
       host = "0.0.0.0";
       port = 11434;
       openFirewall = true;
-      package = pkgs.ollama-rocm;
+      package = pkgs-unstable.ollama-rocm;
       rocmOverrideGfx = "12.0.1";
       environmentVariables = {
         OLLAMA_CONTEXT_LENGTH = "32768";
